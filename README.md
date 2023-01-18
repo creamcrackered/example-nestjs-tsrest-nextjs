@@ -15,3 +15,8 @@ Ports:
 - `http://localhost:3001` API
 - `http://localhost:3002` next-proxy demo
 - `http://localhost:3000` next-basic demo
+
+Reference:
+ - TS-REST https://ts-rest.com/
+ - NextJS https://nextjs.org/
+ - NestJS https://nestjs.com/
