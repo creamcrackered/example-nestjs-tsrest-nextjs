@@ -1,4 +1,4 @@
-# example-nestjs-tsrest-nextjs
+# TS-REST with NextJS and NestJS Examples
 Turborepo with NestJS API Backend sharing Contracts with NextJS Frontend
 
 Clone the repo and run in the root
