@@ -14,8 +14,8 @@ Clone the repo and run in the root
 
 Components:
 - backend/nest-demo <- Nest API
-- frontend/next-basic <- Basic demo showing how to use client to nest calls directly from the clienside
-- frontend/next-proxy <- Proxy demo showing how to proxy requests from client through NextJS to Nest
+- frontend/next-basic <- Basic demo showing how to use client to nest calls directly from the client side
+- frontend/next-proxy <- Proxy demo showing how to proxy requests from client through NextJS as a proxy to Nest
 - shared/contract <- Shared contract lib
 
 Ports:
