@@ -1,21 +1,23 @@
 {
-  "name": "web",
+  "name": "next-proxy",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3002",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3002",
     "lint": "next lint"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.22.0",
     "@ts-rest/core": "^3.12.0",
     "@ts-rest/react-query": "^3.12.0",
+    "contract": "*",
     "next": "^13.1.1",
+    "next-http-proxy-middleware": "^1.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "contract": "*"
+    "zod": "^3.20.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
