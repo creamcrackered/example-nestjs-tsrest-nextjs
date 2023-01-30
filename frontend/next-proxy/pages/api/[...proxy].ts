@@ -11,7 +11,7 @@ export const config = {
 const proxy = (req: NextApiRequest, res: NextApiResponse) => (
   httpProxyMiddleware(req, res, {
     // NestJS API URL here to proxy requests to
-    target: 'http://localhost:3001',
+    target: 'http://localhost:3010',
     // Rewrite path to remove the starting /api
     pathRewrite: [{
       patternStr: '^/api',
