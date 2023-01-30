@@ -910,20 +910,25 @@
     "@tanstack/query-core" "4.22.0"
     use-sync-external-store "^1.2.0"
 
+"@ts-rest/core@3.15.0", "@ts-rest/core@^3.15.0":
+  version "3.15.0"
+  resolved "https://registry.yarnpkg.com/@ts-rest/core/-/core-3.15.0.tgz#20521bdf24a84650ba61a6bce0d24eddb814a573"
+  integrity sha512-uReVbBDnn5d8H+qrJvatzR8UgjHzO6fosg3V6QYfF31U5ykP8IOFNE9o6N1DguJlxhyco4ndrQQ9JVgctEI0DA==
+
 "@ts-rest/core@^3.12.0":
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/@ts-rest/core/-/core-3.12.0.tgz#72afeb3a943a92d4254af38272ac6bad569033d6"
   integrity sha512-VCuPQ3N/rp5onnWDcWr2W76fWOro7JE5N06cM2g55eOEEHbw5pkHkQ4jh+LrZ9lNR2WReGwG9IhEXs34zI3BKw==
 
-"@ts-rest/nest@^3.12.0":
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/@ts-rest/nest/-/nest-3.12.0.tgz#3345c16cc2af1e749f4a07ec487f0744a9530109"
-  integrity sha512-KcINYRfpLUKEacqdo4clbq0TzFXEnaV05SUdWZjGa+HWR7VHa5KCM4P2+HkiD3VN3J0Rvb0sVO8knoKQxJYeeg==
+"@ts-rest/nest@^3.15.0":
+  version "3.15.0"
+  resolved "https://registry.yarnpkg.com/@ts-rest/nest/-/nest-3.15.0.tgz#146c738310ef847db550b7097b15b0ed53c59137"
+  integrity sha512-EcP83pGhDGrbEEqsGIeh/l8bQwSrrKcWC6j0nSReMjFi+ENyFJ53JhK5pLSAwuYLRxp5fk3qVJP8mWGWrOAybg==
 
-"@ts-rest/react-query@^3.12.0":
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/@ts-rest/react-query/-/react-query-3.12.0.tgz#e429350f5487c9649d9da3d1550ec0e37d868884"
-  integrity sha512-+OCDqUK6byWonMhf3zbmYlFeiFsXRMNsjfj8LfqVAbTS6ni2gnjX3WjuAPiGeERlhv0QgIZGPGKZ3MCf+duZRA==
+"@ts-rest/react-query@^3.15.0":
+  version "3.15.0"
+  resolved "https://registry.yarnpkg.com/@ts-rest/react-query/-/react-query-3.15.0.tgz#865a036381c93d7a4ea37b93278751c16da5e250"
+  integrity sha512-rsce4+KJeyEd5Pw9CNL3gfBiFHtDw43+h2Hpq6aLQuWEhEBXJrIllxmNCgntsKORBofYmnzGcgwU8rMbcwcM4g==
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.9"

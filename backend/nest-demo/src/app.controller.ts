@@ -1,25 +1,30 @@
 import { Controller } from '@nestjs/common';
 import { AppService } from './app.service';
-import contract from "contract";
-import { Api, ApiDecorator, initNestServer } from '@ts-rest/nest';
+import contract from 'contract';
+import {
+  Api,
+  nestControllerContract,
+  NestControllerInterface,
+  NestRequestShapes,
+  TsRestRequest,
+} from '@ts-rest/nest';
 
-const s = initNestServer(contract.post); // Import post sub router
-type ControllerShape = typeof s.controllerShape;
-type RouteShape = typeof s.routeShapes;
+const c = nestControllerContract(contract.post);
+type RequestShapes = NestRequestShapes<typeof c>;
 
 @Controller()
-export class AppController implements ControllerShape {
+export class AppController implements NestControllerInterface<typeof c> {
   constructor(private readonly appService: AppService) {}
 
-  @Api(s.route.getPost)
-  async getPost(@ApiDecorator() { params: { id } }: RouteShape['getPost']) {
+  @Api(c.getPost)
+  async getPost(@TsRestRequest() { params: { id } }: RequestShapes['getPost']) {
     const post = this.appService.getPost(id);
 
     return { status: 200 as const, body: post };
   }
 
-  @Api(s.route.createPost)
-  async createPost(@ApiDecorator() { body }: RouteShape['createPost']) {
+  @Api(c.createPost)
+  async createPost(@TsRestRequest() { body }: RequestShapes['createPost']) {
     const post = this.appService.createPost({
       title: body.title,
       body: body.body,
