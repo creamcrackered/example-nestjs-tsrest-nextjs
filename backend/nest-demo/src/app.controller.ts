@@ -14,12 +14,11 @@ type RequestShapes = NestRequestShapes<typeof c>;
 
 @Controller()
 export class AppController implements NestControllerInterface<typeof c> {
-  constructor(private readonly appService: AppService) {}
+  constructor(private readonly appService: AppService) { }
 
   @Api(c.getPost)
   async getPost(@TsRestRequest() { params: { id } }: RequestShapes['getPost']) {
     const post = this.appService.getPost(id);
-
     return { status: 200 as const, body: post };
   }
 
